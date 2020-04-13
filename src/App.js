@@ -8,20 +8,36 @@ import Add from './Add';
 import Edit from './Edit';
 import DetailRecipes from './DetailRecipes';
 import Nav from './Nav';
-import About from './About'
+import Auth from './Auth';
+import users from './users';
 
 function App() {
+  const loginedRoutes = () => (
+    <Switch>
+      <Route path="/crypto/:recipeId" exact component={DetailRecipes}/>
+      <Route path="/add" exact component={Add}/>
+      <Route path="/edit/:recipeId" component={Edit}/>
+      <Route path="*" exact component={Recipes}/>
+    </Switch>
+  );
+
+  const notLoginedRoutes = () => (
+    <Switch>
+      <Route path="/auth" exact component={Auth} />
+      <Route path="*" exact component={Auth} />
+    </Switch>
+  );
+
+  const email = localStorage.getItem('email');
+  const password = localStorage.getItem('password');
+
+  const routes = (users.find(u => u.email === email && u.password === password)) ? loginedRoutes() : notLoginedRoutes();
+
   return (
     <Router>
       <div className="App">
         <Nav/>
-        <Switch>
-          <Route path="/" exact component={Recipes}/>
-          <Route path="/crypto/:recipeId" exact component={DetailRecipes}/>
-          <Route path="/add" component={Add}/>
-          <Route path="/edit/:recipeId" component={Edit}/>
-          <Route path="/about" component={About}/>
-        </Switch>
+        {routes}
       </div>
     </Router>
   );

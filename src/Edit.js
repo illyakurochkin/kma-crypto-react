@@ -27,7 +27,7 @@ function Edit() {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({...recipe, total, amount: 0}),
     };
-    fetch('http://localhost:3001/recipes/' + recipeId, requestOptions)
+    fetch(`http://localhost:3001/${localStorage.getItem('email')}/` + recipeId, requestOptions)
       .then(response => response.json())
       .then(history.goBack())
   };
@@ -44,7 +44,7 @@ function Edit() {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({...recipe, total, amount: 0}),
     };
-    fetch('http://localhost:3001/recipes/' + recipeId, requestOptions)
+    fetch(`http://localhost:3001/${localStorage.getItem('email')}/` + recipeId, requestOptions)
       .then(response => response.json())
       .then(history.goBack())
   };
@@ -54,7 +54,7 @@ function Edit() {
   }, []);
 
   const fretchItems = async () => {
-    const data = await fetch('http://localhost:3001/recipes/' + recipeId);
+    const data = await fetch(`http://localhost:3001/${localStorage.getItem('email')}/` + recipeId);
 
     const recipe = await data.json();
     console.log(recipe);

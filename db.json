@@ -1,9 +1,9 @@
 {
-  "recipes": [
+  "illya.kurochkin@gmail.com": [
     {
       "title": "Etherium",
       "createDate": 1586782621022,
-      "total": 9290,
+      "total": 100.001,
       "decription": "Ethereum is an open source, public, blockchain-based distributed computing platform and operating system featuring smart contract functionality. It supports a modified version of Nakamoto consensus via transaction-based state transitions.",
       "id": 3,
       "category": "10",
@@ -12,9 +12,65 @@
     {
       "title": "Bitcoin",
       "createDate": 1586374976271,
-      "total": 4493.343284,
+      "total": 0.343284,
       "decription": "Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.",
       "id": 4,
+      "amount": 0
+    },
+    {
+      "title": "Litecoin",
+      "createDate": 1586782621022,
+      "total": 100.001,
+      "decription": "One of the first cryptocurrencies to use Scrypt as a hashing algorithm.",
+      "id": 5,
+      "category": "10",
+      "amount": 0
+    },
+    {
+      "title": "Ripple",
+      "createDate": 1586782621022,
+      "total": 0.001,
+      "decription": "Designed for peer to peer debt transfer. Not based on bitcoin.",
+      "id": 6,
+      "category": "10",
+      "amount": 0
+    }
+  ],
+
+  "valentyn.gurin@gmail.com": [
+    {
+      "title": "Etherium",
+      "createDate": 1586782621022,
+      "total": 3,
+      "decription": "Ethereum is an open source, public, blockchain-based distributed computing platform and operating system featuring smart contract functionality. It supports a modified version of Nakamoto consensus via transaction-based state transitions.",
+      "id": 3,
+      "category": "10",
+      "amount": 0
+    },
+    {
+      "title": "Litecoin",
+      "createDate": 1586374976271,
+      "total": 0.234,
+      "decription": "Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.",
+      "id": 4,
+      "amount": 0
+    },
+    {
+      "title": "Etherium",
+      "createDate": 1586782621022,
+      "total": 1400.001,
+      "decription": "One of the first cryptocurrencies to use Scrypt as a hashing algorithm.",
+      "id": 5,
+      "category": "10",
+      "amount": 0
+    },
+    {
+      "title": "Ripple",
+      "createDate": 1586782621022,
+      "total": 50.001,
+      "decription": "Designed for peer to peer debt transfer. Not based on bitcoin.",
+      "id": 6,
+      "category": "10",
       "amount": 0
     }
   ]

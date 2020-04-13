@@ -23,9 +23,10 @@ function Recipes() {
       method: 'GET',
       headers: {'Content-Type': 'application/json'},
     };
-    fetch('http://localhost:3001/recipes', requestOptions)
+    fetch(`http://localhost:3001/${localStorage.getItem('email')}`, requestOptions)
       .then(response => response.json())
       .then(response => setItems(response))
+      .catch(e => console.log('e', e))
 
   };
 
@@ -51,9 +52,9 @@ function Recipes() {
         </InputGroup>
       </Container>
 
-      <div style={{margin: 'auto auto', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+      <div style={{margin: 'auto auto', display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap'}}>
         {items.filter(el => (el.title.toLowerCase().includes(searchInput.toLowerCase()))).map(item => (
-          <div style={{display: 'flex', 'flexDirection': 'row', alignItems: 'center'}}>
+          <div style={{display: 'flex', 'flexDirection': 'row', alignItems: 'center', marginBottom: 100, marginTop: 20}}>
 
             <div key={item.id}>
               <div className="items-and-photo">
