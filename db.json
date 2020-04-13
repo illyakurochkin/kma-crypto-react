@@ -3,17 +3,19 @@
     {
       "title": "Etherium",
       "createDate": 1586782621022,
-      "total": 0,
+      "total": 9290,
       "decription": "Ethereum is an open source, public, blockchain-based distributed computing platform and operating system featuring smart contract functionality. It supports a modified version of Nakamoto consensus via transaction-based state transitions.",
       "id": 3,
-      "category": "10"
+      "category": "10",
+      "amount": 0
     },
     {
       "title": "Bitcoin",
       "createDate": 1586374976271,
-      "total": 0,
+      "total": 4493.343284,
       "decription": "Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.",
-      "id": 4
+      "id": 4,
+      "amount": 0
     }
   ]
 }

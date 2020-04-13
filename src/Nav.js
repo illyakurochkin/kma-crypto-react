@@ -5,14 +5,11 @@ import { Link } from 'react-router-dom';
 import logoImg from "./img/logo.svg";
 
 function Nav() {
-
-
   return (
     <nav>
-      <Link to="/recipes">
+      <Link to="/">
         <h3 className="logo-link">
           <img src={logoImg} alt="Smiley face" />
-
         </h3>
       </Link>
       <ul className="nav-link">
